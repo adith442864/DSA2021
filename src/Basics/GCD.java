@@ -18,7 +18,7 @@ public class GCD {
 
 	public static void main(String[] args) {
 		
-		int a=10, b=15;
+		int a=12, b=16;
 		
 		System.out.println(gcd(a, b));
 
