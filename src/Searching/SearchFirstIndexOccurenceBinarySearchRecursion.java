@@ -19,17 +19,17 @@ public class SearchFirstIndexOccurenceBinarySearchRecursion {
 		else
 		{
 			if(mid == 0 || arr[mid - 1] != arr[mid])
-				return mid;
+				return mid; 
 
 			else
-				return firstOccurence(arr, low, mid - 1, x);
+				return firstOccurence(arr, low, mid - 1, x); // this will go back to left side of array to find a first occurrence:
 		}
 	}
 
 	public static void main(String[] args) {
-		 int arr[] = {5, 10, 10, 15, 20, 20, 20}, n = 7;
+		 int arr[] = {5, 10, 10,20, 20,20}, n = 7;
 
-		int x = 20;
+		int x = 10;
 			
 		System.out.println(firstOccurence(arr, 0, n - 1, x));
 
