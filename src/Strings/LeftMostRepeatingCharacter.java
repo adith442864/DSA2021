@@ -28,9 +28,6 @@ public class LeftMostRepeatingCharacter {
 	    return -1;
 	    } 
   
-    
-    
-    
     public static void main(String args[]) 
     {   String str = "cababd";
         System.out.println("Index of leftmost repeating character:");

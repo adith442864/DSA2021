@@ -3,7 +3,6 @@ package Arrays;
 public class ArrayInsertElement {
 	
 	static int insertElement(int arr[], int n, int x, int cap, int pos) {
-		
 		// before insertion array : {5,7,10,20,-}
 		// after insertion array : {5,3,7,10,20}
 		
@@ -16,7 +15,6 @@ public class ArrayInsertElement {
 		int idx = pos-1; // if pos=4, index=3
 		
 		for(int i=n-1; i>=idx; i--) {
-			
 			arr[i+1]=arr[i];
 			arr[idx] = x;
 			return n+1;
