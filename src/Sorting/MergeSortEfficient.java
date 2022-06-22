@@ -12,7 +12,7 @@ public class MergeSortEfficient {
         
         int m = a.length;
         int n = b.length;
-        merge(a,b,m,n);
+        merge(a, b, m, n);
         
     }
     
@@ -21,7 +21,7 @@ public class MergeSortEfficient {
     	int i=0, j=0;
     	
     	while(i<m && j<n) {
-    		if(a[i]<=b[j]) {
+    		if(a[i]<b[j]) {
     			System.out.print(a[i] +" ");
     			i++;
  
