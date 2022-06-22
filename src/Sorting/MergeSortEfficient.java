@@ -22,19 +22,23 @@ public class MergeSortEfficient {
     	
     	while(i<m && j<n) {
     		if(a[i]<=b[j]) {
-    			System.out.print(a[i++] +" ");
+    			System.out.print(a[i] +" ");
+    			i++;
  
     		}else {
-    			System.out.print(b[j++] +" ");
+    			System.out.print(b[j] +" ");
+    			j++;
     			
     		}
     		
     		while(i<m) {
-    			System.out.print(a[i++]+" ");
+    			System.out.print(a[i]+" ");
+    			i++;
     		}
     		
     		while(j<n) {
-    			System.out.print(b[j++]+" ");
+    			System.out.print(b[j]+" " );
+    			j++;
     		}
     	}
         

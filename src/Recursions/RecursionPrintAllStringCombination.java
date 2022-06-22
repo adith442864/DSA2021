@@ -7,7 +7,7 @@ public class RecursionPrintAllStringCombination {
 		if(index==str.length())
 			System.out.println(str);
 		
-		for(int j=index; j<=str.length(); j++) {
+		for(int j=index; j<=str.length()-1; j++) {
 			str = swap(str, index, j);
 			permute(str, index+1);
 			str = swap(str, j, index);
