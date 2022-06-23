@@ -10,6 +10,7 @@ public class MergeFunctionOfMergeSort {
 		 // high=8
 		    
         int n1=m-l+1, n2=h-m;
+        
         int[] left=new int[n1];
         int[]right=new int[n2];
        
