@@ -25,7 +25,8 @@ public class PatternSearchingDistinct {
     }
   
     public static void main(String args[]) 
-    {   String txt = "ABCABCD";
+    {   
+    	String txt = "ABCABCD";
     	String pat="ABCD";
         System.out.print("All index numbers where pattern found: ");
         patSearchinng(txt,pat);  
