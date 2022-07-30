@@ -18,7 +18,8 @@ public class IntersectionOfTwoSortedArraysEfficient {
 			}
 			else if(a[i] > b[j]) {
 				j++;
-			}else {
+			}
+			else {
 				System.out.print(a[i] +" ");
 				i++;
 				j++;
