@@ -18,10 +18,10 @@ public class InsertionSort {
 	    	
 	    	for(int i=1; i<n; i++) {
 	    		
-	    		int key=arr[i];
-	    		int j=i-1;
+	    		int key=arr[i]; //50
+	    		int j=i-1; // //0th element : 50
 	    		
-	    		while(j>=0 && arr[j] > key) {
+	    		while(j>=0 && arr[j] > key) { //50>20
 	    			arr[j+1] = arr[j];
 	    			j--;
 	    		}
@@ -32,3 +32,10 @@ public class InsertionSort {
 
 	    }
 }
+
+/*
+ * O(n2)
+ * In place and stable
+ * used in practice for small arrays (TimSort and IntroSort)
+ * O(n) is the Best case
+ */

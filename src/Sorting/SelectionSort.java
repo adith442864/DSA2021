@@ -28,7 +28,7 @@ public class SelectionSort {
 		 int a[] = {2, 1, 4, 3};
 		 System.out.println("Before sorting :" +Arrays.toString(a));
 		 selectionSort(a,4);
-		 System.out.println("Before sorting :" +Arrays.toString(a));
+		 System.out.println("After sorting :" +Arrays.toString(a));
 
 	}
 

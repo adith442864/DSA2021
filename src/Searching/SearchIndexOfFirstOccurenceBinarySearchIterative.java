@@ -34,7 +34,7 @@ public class SearchIndexOfFirstOccurenceBinarySearchIterative {
     {
         int arr[] = {5, 10, 10, 10, 20}, n = 5;
 
-		int x = 20;
+		int x = 10;
 
         System.out.println(firstOccurence(arr, n, x));
     } 

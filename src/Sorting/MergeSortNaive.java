@@ -3,12 +3,23 @@ package Sorting;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
+/**
+ * Divide and Conquer algorithm
+ * stable algo
+ * O(n logn) Time and O(n) space
+ * well suited for linked lists. works in O(1) aux space
+ * used in External sorting
+ * In general for Arrays, Quicksort outperforms it.
+ * 
+ *
+ */
+
 public class MergeSortNaive {
 	
 	public static void main (String[] args) 
     {
         int a[] = new int[]{10,15,20,40};
-        int b[] = new int[]{5,6,6,10,15};
+        int b[] = new int[]{5,6,6,10};
   
         
         int m = a.length;
@@ -34,3 +45,4 @@ public class MergeSortNaive {
     }
 
 }
+
