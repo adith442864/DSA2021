@@ -34,7 +34,8 @@ public class HoarePartition {
     	
         int pivot=arr[l];
         
-        int i=l-1,j=h+1;
+        int i=l-1,
+        j=h+1;
         //i=-1, j=8
         
         while(true){
@@ -48,7 +49,7 @@ public class HoarePartition {
             
             if(i>=j)
             return j;
-            
+            //swapping:
             int temp=arr[i];
             arr[i]=arr[j];
             arr[j]=temp;

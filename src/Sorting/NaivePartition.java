@@ -16,7 +16,10 @@ public class NaivePartition {
 	    
 	    static void partition(int arr[], int l, int h, int p)
 	    {
-	        int[] temp=new int[h-l+1];int index=0;
+	        int[] temp=new 
+	        int[h-l+1];
+	        int index=0;
+	        
 	        for(int i=l;i<=h;i++)
 	            if(arr[i]<=arr[p] && i!= p)
 	                {
