@@ -21,7 +21,7 @@ public class UnionOfTwoSortedArraysEfficient {
 //			System.out.println(c[i] +" ");
 		
 		for(int i=0;i<m+n;i++){
-            if(i==0||c[i]!=c[i-1])
+            if(i==0||c[i]!=c[i-1])//if same element is not same as previous element, then print it
                 System.out.print(c[i]+" ");
         }
 	}

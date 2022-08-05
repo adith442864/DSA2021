@@ -26,14 +26,14 @@ public class InsertionSort {
 	    			j--;
 	    		}
 	    		
-	    		arr[j+1] = key;
+	    		arr[j+1] = key; //5 10
 	    	}
 	    
 	    }
 }
 
 /*
- * O(n2)
+ * O(n2) in worst case --> quadtratic times
  * In place and stable
  * used in practice for small arrays (TimSort and IntroSort)
  * O(n) is the Best case

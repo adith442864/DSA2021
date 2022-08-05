@@ -2,6 +2,10 @@ package Sorting;
 
 public class NaivePartition {
 	
+	//stable sorting algo
+	//in efficient when compares with lomuto or hoare algorithm
+	// time complexity : O(n)
+	
 	 public static void main (String[] args) 
 	    {
 	        int arr[] = new int[]{5,13,6,9,12,11,8};
@@ -16,27 +20,29 @@ public class NaivePartition {
 	    
 	    static void partition(int arr[], int l, int h, int p)
 	    {
-	        int[] temp=new 
-	        int[h-l+1];
+	        int[] temp=new int[h-l+1]; //means last element in the array
+	       
 	        int index=0;
 	        
 	        for(int i=l;i<=h;i++)
+	        	
 	            if(arr[i]<=arr[p] && i!= p)
 	                {
-	                    temp[index]=arr[i];index++;
+	                    temp[index]=arr[i];
+	                    index++;
 	                }
 	        temp[index++] = arr[p];
+	        
 	        for(int i=l;i<=h;i++)
-	            if(arr[i]>arr[p])
+	            
+	        	if(arr[i]>arr[p])
 	                {
-	                    temp[index]=arr[i];index++;
+	                    temp[index]=arr[i];
+	                    index++;
 	                }
+	        
 	        for(int i=l;i<=h;i++)
 	            arr[i]=temp[i-l];
 	    }
 	    
-	   
-	
-	
-
 }

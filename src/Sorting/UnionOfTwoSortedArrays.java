@@ -9,7 +9,8 @@ public class UnionOfTwoSortedArrays {
 		 int i=0,j=0;
 	        
 		 while(i<m && j<n){
-        	if(i>0 && a[i-1]==a[i])
+        	
+			 if(i>0 && a[i-1]==a[i])
         	{
         		i++;
         	continue;
@@ -19,6 +20,7 @@ public class UnionOfTwoSortedArrays {
             	j++;
             continue;
             }
+            
             if(a[i]<b[j])
             {
             	System.out.print(a[i]+" ");
@@ -35,11 +37,16 @@ public class UnionOfTwoSortedArrays {
             	i++;j++;
             }
         }
-            while(i<m){if(i==0||a[i]!=a[i-1])System.out.print(a[i]+" ");i++;}
-            while(j<n){if(j==0||b[j]!=b[j-1])System.out.print(b[j]+" ");j++;}
-		
-		
-		
+            while(i<m)
+            {
+            	if(i==0||a[i]!=a[i-1])
+            		System.out.print(a[i]+" ");i++;
+            }
+            while(j<n)
+            {
+            	if(j==0||b[j]!=b[j-1])
+            		System.out.print(b[j]+" ");j++;
+            }	
 	}
 
 	public static void main(String[] args) {

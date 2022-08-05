@@ -12,7 +12,8 @@ public class BubbleSortOptimized {
             swapped = false;
             
             for(int j = 0; j < n - i - 1; j++){
-                if( arr[j] > arr[j + 1]){
+       
+            	if( arr[j] > arr[j + 1]){
                     
                     // swapping
                     int temp = arr[j];
